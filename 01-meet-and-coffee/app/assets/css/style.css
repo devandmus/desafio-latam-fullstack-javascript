@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Open Sans, sans-serif;
+}
+
+:root{
+    --black: #000F08;
+    --white: #FFFFFF;
+    --brown: #A4452C;
+}
+
+/* GLOBAL */
+.oscuro {
+    background-color: var(--black);
+}
+
+.oscuro * {
+    color: var(--white);
+}
+
+h2 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 25px;
+}
+
+/* TOP NAVIGATION */
+.navigation svg {
+    fill: var(--white);
+    height: 44px;
+    width: 44px;
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 27px 0 27px 128px;
+    background-color: var(--black);
+    list-style: none;
+}
+
+.navigation ul li {
+    display: flex;
+    align-items: center;
+    margin-left: 57px;
+}
+
+.navigation ul li:first-of-type {
+    margin-left: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+/* HERO 1 PAGE */
+.hero-section {
+    background-image: url('../img/bg-hero.png');
+    background-size: cover;
+    color: var(--white);
+    padding: 52px 197px 151px 197px;
+}
+
+.hero-section h1,
+.hero-section h2 {
+    text-shadow: 0 3px 6px #00000080;
+    text-align: right;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+}
+
+.hero-section h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* UBICACION 1 PAGE */
+#ubicacion {
+    text-align: center;
+    padding: 153px 0 131px 0;
+}
+
+#ubicacion h2 {
+    padding-top: 48px;
+}
+
+#ubicacion p {
+    padding-top: 18px;
+    max-width: 796px;
+    margin: auto;
+}
+
+#ubicacion img {
+    width: 519px;
+}
+
+/* PROXIMA CHARLA 1 PAGE */
+#proxima-charla {
+    padding: 104px 0;
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+#proxima-charla img {
+    width: 311px;
+}
+
+#proxima-charla > div {
+    display: flex;
+    max-width: 1040px;
+    margin: auto;
+}
+
+#proxima-charla > div > div {
+    padding-left: 39px;
+}
+
+#proxima-charla h3 {
+    font-size: 40px;
+    padding-bottom: 9px;
+}
+
+#proxima-charla h4 {
+    font-size: 33px;
+    font-weight: 400;
+}
+
+#proxima-charla h5 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 13px;
+}
+
+/* EVENTOS PAGE 1 */
+#eventos {
+    padding: 143px 0 162px 0;
+    text-align: center;
+}
+
+#eventos > h2 {
+    padding-bottom: 75px;
+}
+
+#eventos > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 145px;
+    max-width: 1535px;
+    margin: auto;
+}
+
+#eventos .evento a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#eventos .evento img {
+    max-width: 415px;
+    width: 100%;
+    margin: 0 auto 48px auto;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 101px;
+    text-align: center;
+    font-size: 0;
+}
+
+footer a {
+    display: inline-block;
+    margin-left: 27px;
+}
+
+footer a:first-of-type {
+    margin-left: 0;
+}
+
+footer a .fab {
+    font-size: 68px;
+}
+
+footer p {
+    padding-top: 46px;
+    padding-bottom: 27px;
+}
+
+/* SIMPOSIO */
+#simposio {
+    padding: 97px 16px 120px 16px;
+    max-width: 1085px;
+    margin: auto;
+}
+
+#simposio h1 {
+    font-size: 45px;
+    padding-bottom: 73px;
+}
+
+#simposio h2 {
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 48px;
+}
+
+#simposio figure {
+    padding-bottom: 73px;
+}
+
+#simposio figure img {
+
+}
+
+#simposio p {
+    line-height: 34px;
+    margin-bottom: 34px;
+}
