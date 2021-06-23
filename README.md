@@ -6,7 +6,7 @@
 
 <br />
 
-Repositorio de posibles soluciones a los diferentes desafíos del Bootcamp Desafío Latam 2021.
+Repositorio de posibles soluciones para el Bootcamp Desafío Latam 2021.
 
 Los proyectos están dockerizados, los ejecutables funcionan en os UNIX.
 
