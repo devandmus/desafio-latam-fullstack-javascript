@@ -1,0 +1,113 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --brown: #1E1A13;
+}
+
+body {
+    background-color: rgb(15,15,15);
+    color: var(--white);
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--black);
+}
+
+header h1 {
+    padding: 7px 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+header .background {
+    background-image: url('../img/bg-header.jpg');
+    background-size: cover;
+    height: 727px;
+}
+
+.resume {
+    padding: 45px 150px;
+    display: grid;
+    grid-template-columns: 2fr 400px;
+    gap: 106px;
+    align-items: center;
+}
+
+.resume p {
+    line-height: 19px;
+    font-size: 16px;
+}
+
+.desc-section {
+    background-color: var(--brown);
+}
+
+.features {
+    padding: 75px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.features .icons {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .icons .card > div {
+    padding-bottom: 16px;
+}
+
+.features .icons .card i {
+    font-size: 56px;
+}
+
+.features .icons .card p {
+    font-size: 25px;
+}
+
+.photos {
+    padding: 73px 150px;
+    display: flex;
+}
+
+.photos figure {
+    margin-right: 16px;
+}
+
+.photos figure:last-of-type {
+    margin-right: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 39px;
+    font-size: 20px;
+    background-color: var(--brown);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+}
