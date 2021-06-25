@@ -1,0 +1,1 @@
+docker build -t 03-suricata-page . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app 03-suricata-page

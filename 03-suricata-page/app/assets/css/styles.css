@@ -1,0 +1,129 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+nav {
+    background-color: #E83E8C;
+}
+
+img {
+    width: 100%;
+}
+
+/* BOOSTRAP EXTEND */
+.navbar-brand {
+    display: inline-block;
+    max-width: 132px;
+}
+
+.navbar .container-fluid {
+    padding: 0 40px;
+    max-width: 1044px;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid #FFFFFF80;
+}
+
+#navbarToggled {
+    justify-content: flex-end;
+}
+
+#navbarToggled  .nav-link {
+    color: white;
+}
+
+.card-body .card-link {
+    text-decoration: none;
+}
+
+/* PERSO */
+.card-container {
+    padding: 0 40px 50px 40px;
+    max-width: 920px;
+    margin: auto;
+    display: grid;
+    gap: 50px;
+}
+
+.card-container h5 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-container p {
+    font-size: 16px;
+    color: #373A3C;
+}
+
+.card-container .list-group,
+.card-container a {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+header h1 {
+    color: #707070;
+    padding: 41px 61px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 700;
+}
+
+footer .payments {
+    background-color: #17A2B8;
+    color: white;
+    padding: 58px 0;
+}
+
+footer .payments h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer .payments > div {
+    max-width: 1040px;
+    margin: auto;
+}
+
+footer .credit-cards {
+    font-size: 70px;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(6, 1fr);}
+
+footer .footer-logo {
+    background-color: #E83E8C;
+    padding: 30px 0 50px 0;
+}
+
+footer .footer-logo figure {
+    width: 54px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        color: #707070;
+        padding: 64px 0;
+        font-size: 60px;
+        line-height: 82px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 88px;
+        row-gap: 64px;
+        padding: 0 0 120px 0;
+    }
+}
+
