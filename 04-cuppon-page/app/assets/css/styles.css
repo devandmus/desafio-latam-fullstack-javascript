@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+/* BOOSTRAP EXTEND */
+.navbar-brand {
+    display: inline-block;
+    max-width: 132px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.navbar .container-fluid {
+    padding: 0 40px;
+    max-width: 1044px;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid #FFFFFF80;
+}
+
+#navbarToggled {
+    justify-content: flex-end;
+}
+
+#navbarToggled  .nav-link {
+    color: white;
+}
+
+.card-body .card-link {
+    text-decoration: none;
+}
+
+/* PERSO */
+.card-container {
+    padding: 18px 40px 50px 40px;
+}
+
+.card {
+    font-weight: 300;
+}
+
+.card .card-body h5,
+.card .card-body p,
+.card .card-body aside {
+    margin: 0;
+}
+
+.card .card-body h5 {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 11px;
+    font-weight: 300;}
+
+.card .card-body p {
+    font-size: 16px;
+    color: #707070;
+}
+
+.card .card-body aside {
+    font-size: 13px;
+    color: #707070;
+}
+
+.card .card-body .card-custom-footer {
+    padding: 0 16px 16px 16px;
+    display: flex;
+    color: #707070;
+    font-size: 16px;
+}
+
+.card .card-body .card-custom-footer div:nth-last-of-type {
+    font-weight: 500;
+}

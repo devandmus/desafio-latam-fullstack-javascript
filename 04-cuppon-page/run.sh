@@ -1,0 +1,1 @@
+docker build -t 04-cuppon-page . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app 04-cuppon-page
