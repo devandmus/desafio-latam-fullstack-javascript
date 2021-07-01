@@ -1,0 +1,1 @@
+docker build -t 05-notas-finales . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app 05-notas-finales
