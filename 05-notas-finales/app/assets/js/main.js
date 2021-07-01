@@ -80,10 +80,17 @@ if (_app.scores.values.length === 8) {
   const arr = _app.scores.values;
   const len = _app.scores.values.length - 1;
   const average = parseFloat((arr[len - 1] + arr[len]) / 3).toFixed(2);
-  const minimumScore = (4 - average) * 3;
-  document.querySelector('#footer_message').innerHTML = `
-    Para aprobar el ramo Javascript con nota 4, necesitas obtener un ${ minimumScore } en la nota 3.
-    ${ minimumScore > 7 ? '<br />Como es imposible, no podrás aprobar el módulo... Cuek!' : ''}
-  `;
+  const minimumScore = (arr[len - 1] + arr[len]) === 8 ? 4 : (4 - average) * 3;
+  const message = (minimumScore <= 0) ? (
+    'Congrats! ya aprobaste el curso de Javascript. Intenta obtener una buena nota para no perjudicar el promedio global.'
+  ) : (
+    `
+      Para aprobar el ramo Javascript con nota 4, necesitas obtener un ${ minimumScore } en la nota 3.
+      ${ minimumScore > 7 ? '<br />Como es imposible, no podrás aprobar el módulo... Cuek!' : ''}
+    `
+  );
+
+  // insert message
+  document.querySelector('#footer_message').innerHTML = message;
 }
 
