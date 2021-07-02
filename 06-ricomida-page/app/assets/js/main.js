@@ -1,7 +1,7 @@
 $('document').ready(function(){
   // Carousel punto 1
   $('.carousel').carousel({
-    interval: 2000000
+    interval: 2000
   });
 
   $('.carousel-control-prev').click(function(e) {
