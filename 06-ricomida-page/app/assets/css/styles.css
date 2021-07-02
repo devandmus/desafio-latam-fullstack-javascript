@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ricacomida,
+.logo{
+    font-family: 'Lobster', cursive;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+hr {
+    height: 4px!important;
+}
+
+.dbclick-red {
+    cursor: pointer;
+}
+
+.dbclick-red.red {
+    color: #dc3545!important;
+}
+
+.dbclick-red::selection {
+    background: transparent;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.card .card-body .card-title {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+/* BOOTSTRAP EXTENDS */
+.popover {
+    background: rgb(41,44,46);
+    border-color: #1a1e21;
+}
+
+.popover-body {
+    color: white!important;
+    padding: .5rem 1rem;
+}
+
+.bs-popover-bottom .popover-arrow:after {
+    border-bottom-color: rgb(41,44,46);
+}
+
+.bs-popover-top .popover-arrow:after {
+    border-top-color: rgb(41,44,46)!important;
+}
+
+.bs-popover-end .popover-arrow:after {
+    border-right-color: rgb(41,44,46)!important;
+}
+
+.bs-popover-start .popover-arrow:after {
+    border-left-color: rgb(41,44,46)!important;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+
+.carousel-indicators button {
+    height: 20px!important;
+    width: 20px!important;
+    border-radius: 10px!important;
+    border: 0!important;
+    background-color: grey!important;
+}
+
+.carousel-indicators .active {
+    background-color: #1a1e21!important;
+}

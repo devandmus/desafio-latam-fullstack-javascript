@@ -1,0 +1,1 @@
+docker build -t 06-ricomida-page . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app 06-ricomida-page
