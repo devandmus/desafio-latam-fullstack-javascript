@@ -17,6 +17,19 @@ body {
 }
 
 
+/* HERO */
+#hero-section {
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+    #hero-section {
+        background-color: transparent;
+    }
+
+}
+
+
 /* QUIENES SOMOS */
 .qs-icontainer {
     background-color: rgb(28, 147, 169);
