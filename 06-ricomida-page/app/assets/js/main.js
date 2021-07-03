@@ -15,10 +15,7 @@ $('document').ready(function(){
   });
 
   // Tooltip punto 2
-  const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-  });
+  $('[data-bs-toggle="tooltip"]').tooltip()
 
   // Evento punto 3
   $('#emailSend').click(function(){

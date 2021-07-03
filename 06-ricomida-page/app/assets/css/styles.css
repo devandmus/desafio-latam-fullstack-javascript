@@ -46,30 +46,8 @@ hr {
 }
 
 /* BOOTSTRAP EXTENDS */
-.popover {
-    background: rgb(41,44,46);
-    border-color: #1a1e21;
-}
-
-.popover-body {
-    color: white!important;
-    padding: .5rem 1rem;
-}
-
-.bs-popover-bottom .popover-arrow:after {
-    border-bottom-color: rgb(41,44,46);
-}
-
-.bs-popover-top .popover-arrow:after {
-    border-top-color: rgb(41,44,46)!important;
-}
-
-.bs-popover-end .popover-arrow:after {
-    border-right-color: rgb(41,44,46)!important;
-}
-
-.bs-popover-start .popover-arrow:after {
-    border-left-color: rgb(41,44,46)!important;
+.tooltip .tooltip-inner{
+    max-width: 100%;
 }
 
 .carousel-indicators {
