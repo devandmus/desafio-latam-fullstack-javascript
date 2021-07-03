@@ -1,0 +1,1 @@
+docker build -t prueba-ejemplo-mi-portafolio . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app prueba-ejemplo-mi-portafolio

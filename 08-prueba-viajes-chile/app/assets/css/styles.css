@@ -1,0 +1,53 @@
+/* GLOBAL */
+hr {
+    height: 1px;
+    background-color: rgb(28, 147, 169);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+/* NAVBAR */
+.navbar-brand img {
+    height: 40px;
+}
+
+
+/* QUIENES SOMOS */
+.qs-icontainer {
+    background-color: rgb(28, 147, 169);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* DESTACADOS */
+#destacados .card {
+    background-color: rgb(28, 147, 169);
+    color: white;
+    border-color: grey;
+}
+
+
+/* CONTACTO */
+#contacto iframe {
+    margin-top: -4px;
+}
+
+/* FOOTER */
+#footer {
+    background-color: rgb(28, 147, 169);
+}
+
+
+/* BOOTSTRAP */
+.popover {
+    color: #4f5050!important;
+}
