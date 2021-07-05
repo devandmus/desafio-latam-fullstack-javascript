@@ -1,1 +1,1 @@
-docker build -t prueba-viajes-chile . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app prueba-viajes-chile
+docker build -t 09-variables-operadores-aritmeticos . && docker run -it -p 3000:3000 -v $(pwd)/app:/usr/src/app 09-variables-operadores-aritmeticos
