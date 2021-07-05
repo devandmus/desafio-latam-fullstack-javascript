@@ -69,3 +69,8 @@ body {
 .popover {
     color: #4f5050!important;
 }
+
+
+body > main > nav.navbar { /* 1 1 1 1 */
+    background-color: blue;
+}
