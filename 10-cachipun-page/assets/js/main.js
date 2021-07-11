@@ -142,11 +142,13 @@ const Game = {
           <figure class="text-center">
             <img style="max-width: 300px; width: 100%;" src="${ message[2] }" alt="">
           </figure>
-          <p>Jugaste ${ this.matches } veces y el resultado fué:</p>
           <br>
-          <p>Empates: ${ this.empate }</p>
-          <p>Hackerman: ${ this.hackerman }</p>
-          <p>Tú: ${ this.player }</p>
+          <p>Jugaste ${ this.matches } veces y el resultado fué:</p>
+          <p>
+            <strong>Empates:</strong> ${this.empate} <br>
+            <strong>Hackerman:</strong> ${this.hackerman} <br>
+            <strong>Tú:</strong> ${this.player}
+          </p>
           <br>
           <button class="btn btn-primary" onclick="Game.reset()">Reiniciar</button>
         </div>
