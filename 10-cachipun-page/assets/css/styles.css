@@ -12,6 +12,10 @@ main {
     min-height: 100vh;
 }
 
+main {
+    padding-bottom: 184px;
+}
+
 /* LOCAL ELEMENTS */
 footer {
     position: absolute;
