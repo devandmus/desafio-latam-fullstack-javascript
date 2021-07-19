@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+<div>
+    <div>
+        <h2>
+            Resultado: <span class="resultado"></span>
+        </h2>
+        <div>
+            <div>
+                <div>
+                    <label for="">Valor 1</label>
+                    <input id="valor1" type="text">
+                </div>
+                <div>
+                    <label for="">Valor 2</label>
+                    <input id="valor2" type="text">
+                </div>
+                <div style="display: flex">
+                    <button id="btn-sumar" type="button">
+                        Sumar
+                    </button>
+                    <button id="btn-restar" type="button">
+                        Restar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  // Dar la funcionalidad de sumar y restar a la calculadora, mostrando el resultado en el elemento con clase resultado.
+  // Si el resultado de la resta entrega un número negativo debes mostrar un 0.
+  const resultado = document.querySelector('.resultado');
+
+  // se agrega evento sobre ambos botones
+  document.querySelectorAll('#btn-sumar, #btn-restar').forEach(button => {
+    button.addEventListener('click', e => {
+      const val1 = parseInt(document.querySelector('#valor1').value);
+      const val2 = parseInt(document.querySelector('#valor2').value);
+      let result = null;
+      // suma o resta solo si los números son válidos
+      if (!isNaN(val1) && !isNaN(val2)) {
+        if (e.target.id.includes('sumar'))
+          result = val1 + val2;
+        else result = val1 - val2;
+        resultado.innerHTML = result > 0 ? result : 0;
+      }
+      else resultado.innerHTML = '';
+    })
+  });
+
+</script>
+</body>
+
+</html>
