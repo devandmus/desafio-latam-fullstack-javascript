@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+</head>
+<body>
+<script src="assets/js/data.js?v=1"></script>
+<script src="assets/js/utils.js"></script>
+<script>
+    document.write('<h1>Estadisticas centro medico ñuñoa</h1>');
+    document.write('<hr>');
+
+    document.write('<h2>Radiología</h2>');
+    printFirstAndLast(radiologia);
+    printTable(radiologia);
+    document.write('<hr>');
+
+    document.write('<h2>Traumatología</h2>');
+    printFirstAndLast(traumatologia);
+    printTable(traumatologia);
+    document.write('<hr>');
+
+    document.write('<h2>Dental</h2>');
+    printFirstAndLast(dental);
+    printTable(dental);
+</script>
+</body>
+</html>
