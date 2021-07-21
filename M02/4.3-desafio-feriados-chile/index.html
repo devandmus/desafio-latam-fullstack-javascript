@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafío feriados Chile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row py-5">
+        <h1>Feriados en Chile</h1>
+    </div>
+    <div class="row">
+        <div class="">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Detalle</th>
+                        <th>Leyes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $.ajax({
+      url: 'https://www.feriadosapp.com/api/holidays.json',
+      type: 'GET',
+      success: function({ data }){
+        const rows = data.map(instance => `
+            <tr>
+                <td>${instance.date.split('-').reverse().join('/')}</td>
+                <td>${instance.extra}</td>
+                <td>${instance.law.join(', ')}</td>
+            </tr>
+        `);
+        document.querySelector('tbody').innerHTML = rows.join('');
+      }
+    })
+</script>
+</body>
+
+</html>
+

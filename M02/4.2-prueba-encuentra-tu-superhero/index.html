@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Prueba encuentra tu superhero</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/sh2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        SuperHero
+    </a>
+</nav>
+<main class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-7 m-auto">
+            <img src="assets/img/sh1.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-md-12 col-lg-10 col-xl-8 m-auto py-5 px-3">
+            <h1>Encuentra tu SuperHero</h1>
+            <label for="heroId">Ingresa el número del SuperHero a buscar</label>
+            <input id="heroId" type="text" class="w-100 mb-3">
+            <button onclick="getHero()" type="button" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" id="loading"></div>
+        <div class="col-12 col-lg-7" id="result"></div>
+        <div class="col-12 col-lg-5">
+            <div id="chart" class="px-5 h-75"></div>
+        </div>
+    </div>
+</main>
+
+<script src="assets/js/main.js?v=2" type="application/javascript"></script>
+<script src="assets/js/canvas.js?v=2" type="application/javascript"></script>
+</body>
+</html>
+
